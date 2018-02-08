@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Contact
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list *ngFor="let message of messages;">
+    <p class="message" [ngClass]="{'bot-message': message.bot}">
+      {{message.msg}}
+    </p>
+  </ion-list>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-input placeholder="Sua Mensagem..." clearInput class="inputMessage" [(ngModel)]="newMessage" [ngModelOptions]="{standalone: true}" (keyup.enter)="sendMessage()"></ion-input>
+    <button ion-button item-end icon-center (click)="sendMessage()">
+      <ion-icon name="send"></ion-icon>
+    </button>
+  </ion-toolbar>
+</ion-footer>

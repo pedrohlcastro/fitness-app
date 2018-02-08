@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2 text-center>Clique no botão para analizar o alimento.</h2>
+  <button ion-button item-end icon-left (click)="openCamera()">
+    <ion-icon name="camera"></ion-icon>
+  </button>
+  <div *ngIf="image">
+    <img [src]="image">
+  </div>
+  <div *ngIf="result">
+    <h3>Isso é um: {{result.data}}</h3>
+    <p>Calorias: {{result.cal}}</p>
+    <p>Probabilidade: {{result.score * 100}} %</p>
+  </div>
+</ion-content>

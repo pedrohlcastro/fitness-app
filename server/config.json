@@ -1,0 +1,12 @@
+{
+    "visualRecognitionKey": "1cfeffcae253c4781959a0bdfb757703306c315f",
+    "conversation" : {
+        "username": "3ca4a22d-ed0f-4c86-976f-36da6605c87a",
+        "password": "YmS3NcAYRF2p",
+        "workspaceId": "6650fcb8-3280-4961-9d4a-ef66737337fc"
+    },
+    "nutritionix": {
+        "APPID" : "ad3ec16a",
+        "APPKEY": "e11f0f1e5b0816a42932417e85f02c66"
+    }
+}
